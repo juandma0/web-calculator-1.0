@@ -1,0 +1,49 @@
+.grid-div {
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator {
+    height: 100vh;
+    width: 25vw;
+    border-radius: 10px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.screen {
+    padding-top: 20px;
+    height: 32vh;
+    width: 110%;
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    height: 65px;
+    width: 66px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.grid-item-20 {
+    height: 20vh;
+}
+
+.smaller {
+    font-size: 20px
+}
+
+.bigger {
+    font-size: 40px;
+}
+
+.grid-item-s {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    text-align: right;
+    padding-top: 50%;
+    color: white;
+    padding-right: 5%;
+}

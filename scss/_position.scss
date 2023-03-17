@@ -1,0 +1,99 @@
+.grid-div{
+    display: grid;
+    place-items: center;
+}
+
+.calculator{
+    display: grid;
+    place-items: center;
+    grid-template-areas: "screen screen screen screen"
+                        "mc mPlus mMinus mR"
+                        "c division multiplication back"
+                        "seven eight nine minus"
+                        "four five six plus"
+                        "one two three equals"
+                        "percentage zero point equals";
+    row-gap: 10px;
+}
+
+.btn{
+    display: grid;
+    place-items: center;
+}
+
+.grid-item-s{
+    grid-area: screen;
+}
+
+.grid-item-1{
+    grid-area: mc;
+}
+.grid-item-2{
+    grid-area: mPlus;
+}
+.grid-item-3{
+    grid-area: mMinus;
+}
+.grid-item-4{
+    grid-area: mR;
+}
+.grid-item-5{
+    grid-area: c;
+}
+.grid-item-6{
+    grid-area: division;
+}
+.grid-item-7{
+    grid-area: multiplication;
+}
+.grid-item-8{
+    grid-area: back;
+}
+.grid-item-9{
+    grid-area: seven;
+}
+.grid-item-10{
+    grid-area: eight;
+}
+.grid-item-11{
+    grid-area: nine;
+}
+.grid-item-12{
+    grid-area: minus;
+}
+.grid-item-13{
+    grid-area: four;
+}
+.grid-item-14{
+    grid-area: five;
+}
+.grid-item-15{
+    grid-area: six;
+}
+.grid-item-16{
+    grid-area: plus;
+}
+.grid-item-17{
+    grid-area: one;
+}
+.grid-item-18{
+    grid-area: two;
+}
+.grid-item-19{
+    grid-area: three;
+}
+.grid-item-20{
+    grid-area: equals;
+}
+.grid-item-21{
+    grid-area: percentage;
+}
+.grid-item-22{
+    grid-area: zero;
+}
+.grid-item-23{
+    grid-area: point;
+}
+.grid-item-24{
+    grid-area: equals;
+}

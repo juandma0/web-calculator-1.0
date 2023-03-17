@@ -1,0 +1,64 @@
+@import 'variables.scss';
+
+body {
+    background: rgb(28, 28, 28);
+}
+
+.calculator {
+    background-color: black;
+
+}
+
+@keyframes blackColorChange {
+    to {
+        background: rgb(118, 117, 117); // notice that isn't neccesary to put the 'from' statement
+    }
+}
+
+@keyframes blueColorChange {
+    to {
+        background: rgb(27, 95, 196);
+        color: white;
+    }
+}
+
+.btn {
+    background: $grayish;
+    color: white;
+}
+
+.btn:hover {
+    animation-name: blackColorChange;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.grid-item-5,
+.grid-item-6,
+.grid-item-7,
+.grid-item-8,
+.grid-item-12,
+.grid-item-16 {
+    background: rgb(18, 35, 56);
+    color: rgb(45, 101, 198);
+
+    &:hover {
+        // Remember to use the & when using nested properties like this one
+        animation-name: blueColorChange;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.grid-item-20 {
+    background: rgb(18, 139, 238);
+    color: white;
+
+    &:hover {
+        animation-name: blueColorChange;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}

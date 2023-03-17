@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid-div {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.calculator {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+      grid-template-areas: "screen screen screen screen" "mc mPlus mMinus mR" "c division multiplication back" "seven eight nine minus" "four five six plus" "one two three equals" "percentage zero point equals";
+  row-gap: 10px;
+}
+
+.btn {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-style: none;
+}
+
+.grid-item-s {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: screen;
+}
+
+.grid-item-1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: mc;
+}
+
+.grid-item-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: mPlus;
+}
+
+.grid-item-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: mMinus;
+}
+
+.grid-item-4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: mR;
+}
+
+.grid-item-5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+.grid-item-6 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: division;
+}
+
+.grid-item-7 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: multiplication;
+}
+
+.grid-item-8 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: back;
+}
+
+.grid-item-9 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+.grid-item-10 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+.grid-item-11 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+.grid-item-12 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 4;
+  grid-area: minus;
+}
+
+.grid-item-13 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+.grid-item-14 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+.grid-item-15 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+.grid-item-16 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 4;
+  grid-area: plus;
+}
+
+.grid-item-17 {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.grid-item-18 {
+  -ms-grid-row: 11;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.grid-item-19 {
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+.grid-item-20 {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: equals;
+}
+
+.grid-item-21 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  grid-area: percentage;
+}
+
+.grid-item-22 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 2;
+  grid-area: zero;
+}
+
+.grid-item-23 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 3;
+  grid-area: point;
+}
+
+.grid-item-24 {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: equals;
+}
+
+body {
+  background: rgb(28, 28, 28);
+}
+
+.calculator {
+  background-color: black;
+}
+
+@-webkit-keyframes blackColorChange {
+  to {
+    background: rgb(118, 117, 117);
+  }
+}
+
+@keyframes blackColorChange {
+  to {
+    background: rgb(118, 117, 117);
+  }
+}
+@-webkit-keyframes blueColorChange {
+  to {
+    background: rgb(27, 95, 196);
+    color: white;
+  }
+}
+@keyframes blueColorChange {
+  to {
+    background: rgb(27, 95, 196);
+    color: white;
+  }
+}
+.btn {
+  background: rgb(34, 33, 33);
+  color: white;
+}
+
+.btn:hover {
+  -webkit-animation-name: blackColorChange;
+          animation-name: blackColorChange;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.grid-item-5,
+.grid-item-6,
+.grid-item-7,
+.grid-item-8,
+.grid-item-12,
+.grid-item-16 {
+  background: rgb(18, 35, 56);
+  color: rgb(45, 101, 198);
+}
+.grid-item-5:hover,
+.grid-item-6:hover,
+.grid-item-7:hover,
+.grid-item-8:hover,
+.grid-item-12:hover,
+.grid-item-16:hover {
+  -webkit-animation-name: blueColorChange;
+          animation-name: blueColorChange;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.grid-item-20 {
+  background: rgb(18, 139, 238);
+  color: white;
+}
+.grid-item-20:hover {
+  -webkit-animation-name: blueColorChange;
+          animation-name: blueColorChange;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.grid-div {
+  width: 100vw;
+  height: 100vh;
+}
+
+.calculator {
+  height: 100vh;
+  width: 25vw;
+  border-radius: 10px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.screen {
+  padding-top: 20px;
+  height: 32vh;
+  width: 110%;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  height: 65px;
+  width: 66px;
+  border-radius: 15px;
+}
+
+.grid-item-20 {
+  height: 20vh;
+}
+
+.smaller {
+  font-size: 20px;
+}
+
+.bigger {
+  font-size: 40px;
+}
+
+.grid-item-s {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  text-align: right;
+  padding-top: 50%;
+  color: white;
+  padding-right: 5%;
+}
